@@ -12,7 +12,7 @@
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'cipher' => 'AES-256-CBC',
-    'key' => 'base64:yS4G2Jh0g3aEP4mi9gCAeyuGsQQaSBGw9RRsrkGNqC0=',
+    'key' => 'base64:1DxRvFAamIfJ5wBh81jgF7NEp+5IhPBKMEAwH4/dgg4=',
     'previous_keys' => 
     array (
     ),
@@ -621,7 +621,7 @@
     ),
     'from' => 
     array (
-      'address' => 'jsmemorableevents@gmail.com',
+      'address' => 'thejnjphotography@gmail.com',
       'name' => 'Laravel',
     ),
     'markdown' => 

@@ -24,4 +24,19 @@ class CardController extends Controller
     {
         return view('developers');
     }
+
+    public function preview()
+    {
+        return view('preview');
+    }
+
+    public function register()
+    {
+        return view('register');
+    }
+
+    public function signin()
+    {
+        return view('signin');
+    }
 }

@@ -57,7 +57,7 @@
                             </div>
                         </form>
 
-                        <h4 class="card-title fw-bold text-center mb-7 mt-4">CUSTOMER ENQUIRY DATA</h4>
+                        <h4 class="card-title fw-bold text-center mb-7 mt-4">CUSTOMER DATA REPORT</h4>
 
                         <?php if($startDate && $endDate): ?>
                             <p class="alert alert-success text-center"><b><?php echo e(date('F d, Y', strtotime($startDate))); ?> to <?php echo e(date('F d, Y', strtotime($endDate))); ?></b></p>
@@ -77,8 +77,6 @@
                                         <th>Contact</th>
                                         <th>Date & Time of Events</th>
                                         <th>Occasion</th>
-                                        <th>Theme Colors</th>
-                                        <th>People Count</th>
                                         <th>Message</th>
                                     </tr>
                                 </thead>
@@ -91,8 +89,6 @@
                                             <td><?php echo e($item->contact_number); ?></td>
                                             <td><?php echo e(\Carbon\Carbon::parse($item['date'] . ' ' . $item['time'])->format('d F Y - g:i a')); ?></td>
                                             <td><?php echo e($item->occasion); ?></td>
-                                            <td><?php echo e($item->themecolors); ?></td>
-                                            <td><?php echo e($item->people); ?></td>
                                             <td class="message-cell" data-message="<?php echo e($item->message); ?>"></td>
                                         </tr>
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -116,15 +112,15 @@
         white-space: nowrap;
     }
     .btn-back {
-    color: white;
-    background-color: #FFB6C1; /* Baby Pink */
-    border-color: #FFB6C1; /* Baby Pink */
+    color: black;
+    background-color: #fff;
+    border-color: #fff;
     }
 
     .btn-back:hover {
         color: white;
-        background-color: #FF69B4; /* Hot Pink (lighter shade) */
-        border-color: #FF69B4; /* Hot Pink (lighter shade) */
+        background-color: #000; 
+        border-color: #fff;
     }
 </style>
 

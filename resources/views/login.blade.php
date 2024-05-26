@@ -70,6 +70,10 @@
 </head>
 <body>
     <form method="POST" action="{{ route('login') }}">
+                    <div class="featured-text text-center">
+                        <h2 style="font-size: 20px; font-weight: bold;">HELLO ADMIN!</h2>
+                        <p> </p>
+                    </div>
         <img class="logo" src="img/welcome/jnjlogo.jpg" alt="Logo">
         @csrf
         <div>

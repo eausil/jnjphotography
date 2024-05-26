@@ -14,6 +14,7 @@ Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
+
 Route::post('/submit-form', [FormController::class, 'submitForm'])->name('submit-form');
 
 Route::get('/CustomerReport', [CustomerExportController::class, 'CustomerDataController'])->name('customerData');
@@ -23,6 +24,10 @@ Route::get('/Events', [CardController::class, 'photobooth'])->name('photobooth')
 Route::get('/Portraits', [CardController::class, 'rentals'])->name('rentals');
 Route::get('/Studio', [CardController::class, 'cakes'])->name('cakes');
 Route::get('/Developers', [CardController::class, 'developers'])->name('developers');
+
+Route::get('/Preview', [CardController::class, 'preview'])->name('preview');
+Route::get('/Register', [CardController::class, 'register'])->name('register');
+Route::get('/signin', [CardController::class, 'signin'])->name('signin');
 
 
 

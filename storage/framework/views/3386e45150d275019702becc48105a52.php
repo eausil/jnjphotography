@@ -97,12 +97,8 @@
                 object-fit: cover;
             }
 
-
-
-
-
         </style>
-        {{-- css for responsive --}}
+        
         <style>
             /* Adjust padding for smaller screens */
             @media (max-width: 768px) {
@@ -165,33 +161,27 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Home</a></li>
-											<li><a href="{{ route('photobooth') }}">Events</a></li>
-											<li><a href="{{ route('rentals') }}">Portraits</a></li>
-											<li><a href="{{ route('cakes') }}">Studio</a></li>
-											<li><a href="{{ route('developers') }}">Developers</a></li>
-                                            @if(!Auth::check())
-                                                <li><a href="{{ route('login') }}">Admin</a></li>
-                                            @endif
-                                            @if(Auth::check())
-                                            <li><a href="{{ route('customerData') }}">C-Panel</a></li>
+                                            <li class="active"><a href="#">Preview</a></li>
+                                            <li><a href="<?php echo e(route('register')); ?>">Register</a></li>
+                                            <?php if(!Auth::check()): ?>
+                                                <li><a href="<?php echo e(route('login')); ?>">Admin</a></li>
+                                            <?php endif; ?>
+                                            <?php if(Auth::check()): ?>
+                                            <li><a href="<?php echo e(route('customerData')); ?>">C-Panel</a></li>
 
-                                            @endif
-                                            @if(Auth::check())
-                                            <li><form action="{{ route('logout') }}" method="post">
-                                                @csrf
-                                                <a href="preview" onclick="event.preventDefault(); this.closest('form').submit();" style="cursor: pointer;">Logout</a>
+                                            <?php endif; ?>
+                                            <?php if(Auth::check()): ?>
+                                            <li><form action="<?php echo e(route('logout')); ?>" method="post">
+                                                <?php echo csrf_field(); ?>
+                                                <a href="#" onclick="event.preventDefault(); this.closest('form').submit();" style="cursor: pointer;">Logout</a>
                                             </form></li>
-                                            @endif
+                                            <?php endif; ?>
+                                            <li><br><br></a></li>
+                                            <li><br>Register to unlock exclusive access and benefits<br></a></li>
 										</ul>
 									</nav>
 								</div>
 								<!--/ End Main Menu -->
-							</div>
-							<div class="col-lg-2 col-12">
-                                <div class="get-appoint">
-                                    <a href="#" class="btn" id="book-appointment-btn">Book Appointment</a>
-                                </div>
 							</div>
 						</div>
 					</div>
@@ -262,13 +252,13 @@
 		</section>
 		<!--/ End Slider Area -->
 
-        {{-- 3 card --}}
+        
         <div class="middle card">
             <div class="row px-2 cardholder">
                 <div class="col pb-4">
                     <article class="cards shadow">
                         <div class="temporary_text">
-                            <img class="img-fluid mb-3 mb-lg-0" src="{{ asset('img/evnt/events1.jpg') }}"alt="..." />
+                            <img class="img-fluid mb-3 mb-lg-0" src="<?php echo e(asset('img/evnt/events1.jpg')); ?>"alt="..." />
                         </div>
                         <div class="card_content" id="openModalBtn">
                             <span class="card_title">Events</span>
@@ -280,7 +270,7 @@
                                 Family Gathering <br>
                                 Corporate Events.. <br><br>
                             </p>
-                            <a href="{{ route('photobooth') }}" class="photobooth" style="color: black; font-size: 16px;">
+                            <a href="<?php echo e(route('register')); ?>" class="register" style="color: black; font-size: 16px;">
                             LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </article>
@@ -288,7 +278,7 @@
                 <div class="col pb-4">
                     <article class="cards shadow">
                         <div class="temporary_text">
-                            <img class="img-fluid mb-3 mb-lg-0" src="{{ asset('img/portrait/portrait1.jpg') }}"alt="..." />
+                            <img class="img-fluid mb-3 mb-lg-0" src="<?php echo e(asset('img/portrait/portrait1.jpg')); ?>"alt="..." />
                         </div>
                         <div class="card_content">
                             <span class="card_title">Portraits</span>
@@ -300,7 +290,7 @@
                                 Prenuptial Portraits <br>
                                 Maternity Portraits.. <br><br>
                             </p>
-                            <a href="{{ route('rentals') }}" class="rentals" style="color: black; font-size: 16px;">
+                            <a href="<?php echo e(route('register')); ?>" class="register" style="color: black; font-size: 16px;">
                                 LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </article>
@@ -308,7 +298,7 @@
                 <div class="col">
                     <article class="cards shadow">
                         <div class="temporary_text">
-                            <img class="img-fluid mb-3 mb-lg-0" src="{{ asset('img/studio/studio1.jpg') }}"
+                            <img class="img-fluid mb-3 mb-lg-0" src="<?php echo e(asset('img/studio/studio1.jpg')); ?>"
                                 alt="..." />
                         </div>
                         <div class="card_content">
@@ -320,7 +310,7 @@
                                 Individual Photography <br>
                                 Group Photography <br>
                                 Fashion and Glamour.. <br><br>
-                            <a href="{{ route('cakes') }}" class="rentals" style="color: black; font-size: 16px;">
+                            <a href="<?php echo e(route('register')); ?>" class="register" style="color: black; font-size: 16px;">
                             LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
                             </p>
                         </div>
@@ -328,11 +318,11 @@
                 </div>
 
             </div>
-            {{-- <div class="col-12 borbtm"></div> --}}
+            
         </div>
-        {{-- 3 card end --}}
+        
 
-        {{-- events  --}}
+        
         <section class="projects-section" id="projects">
             <div class="container px-4 px-lg-5">
                 <div class="row">
@@ -390,14 +380,14 @@
                                 <span style="color: white;">Book with us today<br>
                                 <span style="color: white;">and create memories<br>
 								<span style="color: white;">that will last a lifetime!<br> <br></p>
-                            <a href="{{ route('photobooth') }}" class="photobooth" style="color: #FFF; font-size: 25px; margin-bottom: 20px;">
+                            <a href="<?php echo e(route('register')); ?>" class="register" style="color: #FFF; font-size: 25px; margin-bottom: 20px;">
                                 LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        {{-- end event  --}}
+        
 
 		<!-- Start portraits -->
 		<section class="pricing-table section">
@@ -423,7 +413,7 @@
 							<div class="news-body">
 								<div class="news-content text-center"> <!-- Added 'text-center' class -->
 									<div>
-										<a class="btn booknow3" href="{{ route('rentals') }}">LEARN MORE</a>
+										<a class="btn booknow3" href="<?php echo e(route('register')); ?>" class="register">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -439,7 +429,7 @@
 							<div class="news-body">
 								<div class="news-content text-center"> <!-- Added 'text-center' class -->
 									<div>
-										<a class="btn booknow3" href="{{ route('rentals') }}">LEARN MORE</a>
+										<a class="btn booknow3" href="<?php echo e(route('register')); ?>" class="register">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -455,7 +445,7 @@
 							<div class="news-body">
 								<div class="news-content text-center"> <!-- Added 'text-center' class -->
 									<div>
-										<a class="btn booknow3" href="{{ route('rentals') }}">LEARN MORE</a>
+										<a class="btn booknow3" href="<?php echo e(route('register')); ?>" class="register"">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -492,7 +482,7 @@
 							<div class="news-body">
 								<div class="news-content text-center"> <!-- Added 'text-center' class -->
 									<div>
-										<a class="btn booknow2" href="{{ route('cakes') }}">LEARN MORE</a>
+										<a class="btn booknow2" href="<?php echo e(route('register')); ?>" class="register">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -508,7 +498,7 @@
 							<div class="news-body">
 								<div class="news-content text-center"> <!-- Added 'text-center' class -->
 									<div>
-										<a class="btn booknow2" href="{{ route('cakes') }}">LEARN MORE</a>
+										<a class="btn booknow2" href="<?php echo e(route('register')); ?>" class="register"">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -524,7 +514,7 @@
 							<div class="news-body">
 								<div class="news-content text-center"> <!-- Added 'text-center' class -->
 									<div>
-										<a class="btn booknow2" href="{{ route('cakes') }}">LEARN MORE</a>
+										<a class="btn booknow2" href="<?php echo e(route('register')); ?>" class="register">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -537,92 +527,6 @@
 		</section>
 		<!-- End studio Blog Area -->
 
-		<!-- Start Appointment -->
-		<section class="appointment">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Experience Photography Excellence: Reach Out to Secure Your Session Today!</h2>
-							<i class="fa fa-camera" aria-hidden="true" style="color: white; font-size: 35px;"></i>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 col-md-12 col-12">
-						<form id="booking-form" class="form" action="{{ route('submit-form') }}" method="POST">
-                            @csrf
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-12">
-                                    <label for="" style="color: #fff;">Name:</label>
-									<div class="form-group">
-										<input name="name" type="text" placeholder="Name" required>
-									</div>
-								</div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <label for="" style="color: #fff;">Email:</label>
-									<div class="form-group">
-										<input name="email" type="email" placeholder="Email" required>
-									</div>
-								</div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <label for="" style="color: #fff;">Contact Number:</label>
-                                    <div class="form-group">
-                                        <input name="contact_number" type="tel" placeholder="Contact Number (e.g., +639 123 456)" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <label for="" style="color: #fff;">Date of Event:</label>
-									<div class="form-group">
-										<input name="date" type="date" required>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-                                    <label for="" style="color: #fff;">Occasion:</label>
-									<div class="form-group">
-										<input name="occasion" type="text" placeholder="Occasion" required>
-									</div>
-								</div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <label for="" style="color: #fff;">Time of Event:</label>
-                                    <div class="form-group">
-                                        <input name="time" type="time" placeholder="Time" required>
-                                    </div>
-                                </div>
-								<div class="col-lg-12 col-md-12 col-12">
-									<div class="form-group">
-										<textarea name="message" placeholder="Please Specify exactly what is needed" required></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-5 col-md-4 col-12">
-									<div class="form-group">
-										<div class="button">
-											<button type="submit" class="btn">Book an Appointment</button> <br><br>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-7 col-md-8 col-12">
-                                    @if(session('success_message'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('success_message') }}
-                                    </div>
-                                @endif
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="col-lg-6 col-md-12 ">
-						<div class="appointment-image">
-							<img src="img/welcome/jnjlogo.jpg" alt="#">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Appointment -->
 
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -644,11 +548,11 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
-											<li><a href="{{ url('/') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-											<li><a href="{{ route('photobooth') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a></li>
-											<li><a href="{{ route('rentals') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Portraits</a></li>
-											<li><a href="{{ route('cakes') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Studio</a></li>
-											<li><a href="{{ route('developers') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Developers</a></li>
+											<li><a href="<?php echo e(url('/')); ?>"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="<?php echo e(route('photobooth')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a></li>
+											<li><a href="<?php echo e(route('rentals')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Portraits</a></li>
+											<li><a href="<?php echo e(route('cakes')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Studio</a></li>
+											<li><a href="<?php echo e(route('developers')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Developers</a></li>
 										</ul>
 									</div>
 
@@ -740,3 +644,4 @@
 
     </body>
 </html>
+<?php /**PATH C:\Users\audre\OneDrive\Desktop\J'sMemorableEvents\JsMemorableEvents\resources\views/preview.blade.php ENDPATH**/ ?>

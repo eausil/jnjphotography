@@ -75,7 +75,7 @@
                 text-align: center;
                 line-height: 40px;
                 font-size: 20px;
-                color: white;
+                color: black;
                 cursor: pointer;
             }
 
@@ -103,7 +103,7 @@
 							<!-- Top Contact -->
 							<ul class="top-contact">
 								<li>Capturing Moments, Creating Memories: Your Vision, Our Artistry</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jnjphotography@gmail.com</a></li>
+                                <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">thejnjphotography@gmail.com</a></li>
                                 <li><i class="icofont-facebook"></i><a href="https://www.facebook.com/JnJphtgrpy">JnJ Photography</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -136,19 +136,7 @@
 											<li class="active"><a href="#">Events</a></li>
 											<li><a href="{{ route('rentals') }}">Portraits</a></li>
 											<li><a href="{{ route('cakes') }}">Studio</a></li>
-                                            @if(!Auth::check())
-                                                <li><a href="{{ route('login') }}">Sign in</a></li>
-                                            @endif
-                                            @if(Auth::check())
-                                            <li><a href="{{ route('customerData') }}">C-Panel</a></li>
-
-                                            @endif
-                                            @if(Auth::check())
-                                            <li><form action="{{ route('logout') }}" method="post">
-                                                @csrf
-                                                <a href="#" onclick="event.preventDefault(); this.closest('form').submit();" style="cursor: pointer;">Logout</a>
-                                            </form></li>
-                                            @endif
+                                            <li><a href="{{ route('developers') }}">Developers</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -387,6 +375,7 @@
 											<li><a href="{{ route('photobooth') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a></li>
 											<li><a href="{{ route('rentals') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Portraits</a></li>
 											<li><a href="{{ route('cakes') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Studio</a></li>
+                                            <li><a href="{{ route('developers') }}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Developers</a></li>
 										</ul>
 									</div>
 
@@ -406,7 +395,6 @@
 							<div class="single-footer">
 								<h2>Developers</h2>
 								<ul class="time-sidual">
-									
                                     <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/sprt.dr/">Audrey S. Espiritu</a></li>
 									<li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/ianne.banaga">Ianne Carlo B. Bañaga</a></li>
 									<li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/deGuzman24RoxanneJustine">Roxanne Justine DR. De Guzman</a></li>

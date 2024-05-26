@@ -57,7 +57,7 @@
 							<!-- Top Contact -->
 							<ul class="top-contact">
 								<li>Capturing Moments, Creating Memories: Your Vision, Our Artistry</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jnjphotography@gmail.com</a></li>
+                                <li><i class="fa fa-envelope"></i> <a href="mailto:@thejnjphotography@gmail.com">thejnjphotography@gmail.com</a></li>
                                 <li><i class="icofont-facebook"></i><a href="https://www.facebook.com/JnJphtgrpy">JnJ Photography</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -90,8 +90,9 @@
 											<li><a href="<?php echo e(route('photobooth')); ?>">Events</a></li>
 											<li><a href="<?php echo e(route('rentals')); ?>">Portraits</a></li>
 											<li class="active"><a href="#">Studio</a></li>
+                                            <li><a href="<?php echo e(route('developers')); ?>">Developers</a></li>
                                             <?php if(!Auth::check()): ?>
-                                                <li><a href="<?php echo e(route('login')); ?>">Sign in</a></li>
+                                                <li><a href="<?php echo e(route('login')); ?>">Admin</a></li>
                                             <?php endif; ?>
                                             <?php if(Auth::check()): ?>
                                             <li><a href="<?php echo e(route('customerData')); ?>">C-Panel</a></li>
@@ -420,6 +421,7 @@
 											<li><a href="<?php echo e(route('photobooth')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a></li>
 											<li><a href="<?php echo e(route('rentals')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Portraits</a></li>
 											<li><a href="<?php echo e(route('cakes')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Studio</a></li>
+                                            <li><a href="<?php echo e(route('developers')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Developers</a></li>
 										</ul>
 									</div>
 
@@ -439,7 +441,6 @@
 							<div class="single-footer">
 								<h2>Developers</h2>
 								<ul class="time-sidual">
-									
                                     <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/sprt.dr/">Audrey S. Espiritu</a></li>
 									<li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/ianne.banaga">Ianne Carlo B. Bañaga</a></li>
 									<li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/deGuzman24RoxanneJustine">Roxanne Justine DR. De Guzman</a></li>

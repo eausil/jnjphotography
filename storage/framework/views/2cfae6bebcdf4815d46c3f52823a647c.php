@@ -125,10 +125,6 @@
     </head>
     <body>
 
-        <div class="preloader-container">
-            <div class="preloader"></div>
-        </div>
-
 		<!-- Header Area -->
 		<header class="header" >
 			<!-- Topbar -->
@@ -140,7 +136,7 @@
 							<!-- Top Contact -->
 							<ul class="top-contact">
 								<li>Capturing Moments, Creating Memories: Your Vision, Our Artistry</a></li>
-                                <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jnjphotography@gmail.com</a></li>
+                                <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">thejnjphotography@gmail.com</a></li>
                                 <li><i class="icofont-facebook"></i><a href="https://www.facebook.com/JnJphtgrpy">JnJ Photography</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -169,12 +165,13 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="<?php echo e(url('/')); ?>">Home</a></li>
 											<li><a href="<?php echo e(route('photobooth')); ?>">Events</a></li>
 											<li><a href="<?php echo e(route('rentals')); ?>">Portraits</a></li>
 											<li><a href="<?php echo e(route('cakes')); ?>">Studio</a></li>
+                                            <li><a href="<?php echo e(route('developers')); ?>">Developers</a></li>
                                             <?php if(!Auth::check()): ?>
-                                                <li><a href="<?php echo e(route('login')); ?>">Sign in</a></li>
+                                                <li><a href="<?php echo e(route('login')); ?>">Admin</a></li>
                                             <?php endif; ?>
                                             <?php if(Auth::check()): ?>
                                             <li><a href="<?php echo e(route('customerData')); ?>">C-Panel</a></li>
@@ -271,6 +268,186 @@
                 <!-- End Text beside image -->
             </div>
         </div>
+
+            <br>
+            <br>
+            <br>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <img src="img/dev/dev2.png" alt="#">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content text-center"> <!-- Added 'text-center' class -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Text beside image -->
+                <div class="single-news">
+                    <div class="news-body">
+                        <div class="news-content">
+                            <br><h2>Ianne Carlo B. Bañaga</h2> <br><!-- Added h2 text -->
+                            <p>Address: Paombong, Bulacan <br>
+                                Contact No: 09754316261 <br>
+                                Gmail: iannecarlo0@gmail.com <br> <br>
+                                Education: Bulacan State University <br>
+                                Program: BS Computer Engineering <br> <br>
+                                Interest: Playing computer games is my hobby because it offers entertainment,
+                                relaxation, and mental challenges. I love immersing myself in virtual worlds,
+                                solving problems, and connecting with a global community of gamers. It helps me
+                                unwind and sharpen my cognitive skills, making it a fulfilling and enjoyable part of my life.
+                            </p> <br> <br> <!-- Added paragraph text -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text beside image -->
+            </div>
+             <div class="col-lg-4 col-md-6 col-12">
+                <!-- Text beside image -->
+                <div class="single-news">
+                    <div class="news-body">
+                        <div class="news-content">
+                            <br><h2></h2> <br><!-- Added h2 text -->
+                            <p>	<ul class="time-sidual">
+                                    <br>
+                                    <br>
+                                    <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/ianne.banaga"> Ianne Carlo B. Bañaga</a></li>
+                                    <li><i class="icofont-instagram"></i> <a href="https://www.instagram.com/ianne.carlo/">   Ianne Carlo B. Bañaga</a></li>
+                                </ul>
+                            </p> <br> <br> <!-- Added paragraph text -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text beside image -->
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <img src="img/dev/dev3.png" alt="#">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content text-center"> <!-- Added 'text-center' class -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Text beside image -->
+                <div class="single-news">
+                    <div class="news-body">
+                        <div class="news-content">
+                            <br><h2>Roxanne Justine DR. De Guzman</h2> <br><!-- Added h2 text -->
+                            <p>Address: Hagonoy, Bulacan <br>
+                                Contact No: 09663801929 <br>
+                                Gmail: deguzman.roxannejustine.d@gmail.com <br> <br>
+                                Education: Bulacan State University <br>
+                                Program: BS Computer Engineering <br> <br>
+                                Interest: I love taking my motorcycle out for leisurely rides, enjoying
+                                the beautiful surroundings, whether it's the countryside, coastal roads,
+                                or cityscapes. Alongside this, I have a passion for collecting diecast cars,
+                                appreciating their intricate details and craftsmanship. Together, these interests
+                                blend adventure with aesthetic appreciation and a touch of nostalgia.
+                            </p> <br> <br> <!-- Added paragraph text -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text beside image -->
+            </div>
+             <div class="col-lg-4 col-md-6 col-12">
+                <!-- Text beside image -->
+                <div class="single-news">
+                    <div class="news-body">
+                        <div class="news-content">
+                            <br><h2></h2> <br><!-- Added h2 text -->
+                            <p>	<ul class="time-sidual">
+                                    <br>
+                                    <br>
+                                    <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/deGuzman24RoxanneJustine"> Roxanne Justine DR. De Guzman</a></li>
+                                    <li><i class="icofont-instagram"></i> <a href="https://www.instagram.com/deguzman_roxanne/">   Roxanne Justine DR. De Guzman</a></li>
+                                </ul>
+                            </p> <br> <br> <!-- Added paragraph text -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text beside image -->
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Single Blog -->
+                <div class="single-news">
+                    <div class="news-head">
+                        <img src="img/dev/dev4.png" alt="#">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content text-center"> <!-- Added 'text-center' class -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Blog -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Text beside image -->
+                <div class="single-news">
+                    <div class="news-body">
+                        <div class="news-content">
+                            <br><h2>Zyra Nichole P. Evangelista</h2> <br><!-- Added h2 text -->
+                            <p>Address: Paombong, Bulacan <br>
+                                Contact No: 09692603446 <br>
+                                Gmail: evangelista.zyranichole.p@gmail.com <br> <br>
+                                Education: Bulacan State University <br>
+                                Program: BS Computer Engineering <br> <br>
+                                Interest: I have a deep passion for the arts, particularly in painting,
+                                digital drawing, crocheting, and writing. Painting lets me express emotions
+                                on canvas, while digital drawing offers precision and creativity. Crocheting
+                                allows me to craft textured creations. As a student journalist during elementary
+                                and high school, I developed a love for writing, which continues to inspire me to weave compelling narratives.
+                            </p> <br> <br> <!-- Added paragraph text -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text beside image -->
+            </div>
+             <div class="col-lg-4 col-md-6 col-12">
+                <!-- Text beside image -->
+                <div class="single-news">
+                    <div class="news-body">
+                        <div class="news-content">
+                            <br><h2></h2> <br><!-- Added h2 text -->
+                            <p>	<ul class="time-sidual">
+                                    <br>
+                                    <br>
+                                    <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/znvnglst"> Zyra Nichole P. Evangelista</a></li>
+                                    <li><i class="icofont-instagram"></i> <a href="https://www.instagram.com/znvnglst/">   Zyra Nichole P. Evangelista</a></li>
+                                </ul>
+                            </p> <br> <br> <!-- Added paragraph text -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text beside image -->
+            </div>
+        </div>
+
     </div>
 </section>
 <!-- End portraits Blog Area -->
@@ -302,6 +479,7 @@
 											<li><a href="<?php echo e(route('photobooth')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a></li>
 											<li><a href="<?php echo e(route('rentals')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Portraits</a></li>
 											<li><a href="<?php echo e(route('cakes')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Studio</a></li>
+                                            <li><a href="<?php echo e(route('developers')); ?>" ><i class="fa fa-caret-right" aria-hidden="true"></i>Developers</a></li>
 										</ul>
 									</div>
 
@@ -312,7 +490,7 @@
 							<div class="single-footer">
 								<h2>Social Media</h2>
 								<ul class="time-sidual">
-                                    <li><i class="fa fa-envelope"></i> <a href="mailto:@jnjphotography@gmail.com">jnjphotography@gmail.com</a></li>
+                                    <li><i class="fa fa-envelope"></i> <a href="mailto:@thejnjphotography@gmail.com">thejnjphotography@gmail.com</a></li>
                                     <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/JnJphtgrpy">JnJ Photography</a></li>
                                 </ul>
 							</div>
@@ -321,7 +499,6 @@
 							<div class="single-footer">
 								<h2>Developers</h2>
 								<ul class="time-sidual">
-									<li><a href="<?php echo e(route('developers')); ?>"><i class="fa fa-caret-right" aria-hidden="true"></i>The Developers</a></li>
                                     <li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/sprt.dr/">Audrey S. Espiritu</a></li>
 									<li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/ianne.banaga">Ianne Carlo B. Bañaga</a></li>
 									<li><i class="icofont-facebook"></i> <a href="https://www.facebook.com/deGuzman24RoxanneJustine">Roxanne Justine DR. De Guzman</a></li>

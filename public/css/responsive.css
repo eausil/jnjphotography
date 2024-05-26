@@ -399,7 +399,7 @@
         position: absolute;
         position: relative;
         padding-bottom: 20px;
-        background: #fff;
+        background: #000;
     }
     .slicknav_menu{
         display:block;
@@ -444,7 +444,7 @@
 
     }
     .slicknav_nav li a {
-        color: #2C2D3F;
+        color: #fff;
         transition: all 0.4s ease;
         background: none;
         padding: 4px 10px;
@@ -477,7 +477,7 @@
         font-weight:400;
     }
     .slicknav_menu .slicknav_icon-bar {
-        background-color: #f7b2c9;
+        background-color: #fff;
         box-shadow: none;
         text-shadow: none;
     }

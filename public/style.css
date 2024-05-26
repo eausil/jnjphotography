@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-size:14px;
-	color:#888;
+	color:#fff;
 }
 
 .logo img {
@@ -2627,6 +2627,7 @@ body{
 	height:100%;
 	width:100%;
 	background:#000;
+	border-top: 5px solid #fff;
 	opacity:0.1;
 }
 .footer .single-footer{

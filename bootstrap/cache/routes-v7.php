@@ -71,7 +71,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::pwfM6Rvd6lN3n2Mc',
+            '_route' => 'generated::YtmJ7PbkFpC7ge7R',
           ),
           1 => NULL,
           2 => 
@@ -91,7 +91,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XABXFRprs2Ik0nNW',
+            '_route' => 'generated::IZZYHYVOYDTPnsEz',
           ),
           1 => NULL,
           2 => 
@@ -128,7 +128,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::sIwkSafvlCCquQfe',
+            '_route' => 'generated::0P8vOsyGPhpolUqZ',
           ),
           1 => NULL,
           2 => 
@@ -299,6 +299,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/Preview' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'preview',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Register' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'register',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/signin' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'signin',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
@@ -419,7 +479,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::pwfM6Rvd6lN3n2Mc' => 
+    'generated::YtmJ7PbkFpC7ge7R' => 
     array (
       'methods' => 
       array (
@@ -438,7 +498,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\audre\\\\OneDrive\\\\Desktop\\\\J\\\'sMemorableEvents\\\\JsMemorableEvents\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"000000000000057b0000000000000000";}}',
-        'as' => 'generated::pwfM6Rvd6lN3n2Mc',
+        'as' => 'generated::YtmJ7PbkFpC7ge7R',
       ),
       'fallback' => false,
       'defaults' => 
@@ -454,7 +514,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XABXFRprs2Ik0nNW' => 
+    'generated::IZZYHYVOYDTPnsEz' => 
     array (
       'methods' => 
       array (
@@ -476,7 +536,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XABXFRprs2Ik0nNW',
+        'as' => 'generated::IZZYHYVOYDTPnsEz',
       ),
       'fallback' => false,
       'defaults' => 
@@ -529,7 +589,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::sIwkSafvlCCquQfe' => 
+    'generated::0P8vOsyGPhpolUqZ' => 
     array (
       'methods' => 
       array (
@@ -549,7 +609,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::sIwkSafvlCCquQfe',
+        'as' => 'generated::0P8vOsyGPhpolUqZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -844,6 +904,117 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'developers',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'preview' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Preview',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\CardController@preview',
+        'controller' => 'App\\Http\\Controllers\\CardController@preview',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'preview',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'register' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Register',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\CardController@register',
+        'controller' => 'App\\Http\\Controllers\\CardController@register',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'register',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'signin' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'signin',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\CardController@signin',
+        'controller' => 'App\\Http\\Controllers\\CardController@signin',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'signin',
       ),
       'fallback' => false,
       'defaults' => 

@@ -19,8 +19,6 @@ class FormController extends Controller
             'date' => 'required|date',
             'time' => 'required|date_format:H:i',
             'occasion' => 'required|string|max:255',
-            'themecolors' => 'required|string|max:255',
-            'people' => 'required|integer',
             'message' => 'required|string',
         ]);
 
